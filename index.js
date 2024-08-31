@@ -23,10 +23,18 @@ let continuar = true;
 remeras.push(new remeraSket('azul', 'S', 'sketDiseño', 20000));
 remeras.push(new remeraSket('negro', 'M', 'sketDiseño', 18000));
 remeras.push(new remeraSket('blanco', 'XXL', 'sketDiseño', 30000));
+remeras.push(new remeraSket('verde','L','sketDiseño',21000));
+remeras.push(new remeraSket('verde','XL','sketDiseño',23000));
 
 // Comprar remeras prediseñadas
 if (confirm('¿Desea comprar nuestros diseños?')) {
     while (continuar) {
+        if(confirm('Desea filtrar las remeras por el precio mas bajo?'))
+        {
+            remeras.sort((a,b) => a.precio - b.precio)
+        }else if(confirm('Desea filtrar por el precio mas alto?')) {
+            remeras.sort((a,b) => b.precio - a.precio)
+        }
         let mensaje = 'Nuestros diseños son:\n';
         remeras.forEach((remera, index) => {
             mensaje += `${index + 1}. Color: ${remera.color}, Talla: ${remera.talla}, Diseño: ${remera.diseño}, Precio: ${remera.precio}\n`;
@@ -91,6 +99,7 @@ while (continuar) {
 
 // Mostrar todas las remeras en el carrito
 let mensajeFinal = 'Tus remeras en el carrito son:\n';
+carrito.sort((a,b) => a.precio - b.precio)
 carrito.forEach((remera, index) => {
     mensajeFinal += `${index + 1}. Color: ${remera.color}, Talla: ${remera.talla}, Diseño: ${remera.diseño}, Precio: ${remera.precio}\n`;
 });
