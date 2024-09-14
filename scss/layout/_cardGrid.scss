@@ -1,0 +1,22 @@
+.container-card{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    gap: 15px;
+    div{
+        display: flex;
+        flex-direction: column;
+        background-color: $background-card;
+        align-items: center;
+        border-radius: 20px;
+        h2{
+            padding: 5px;
+        }
+        img{
+            width: 300px;
+            height: 400px;
+            border-radius: 20px;
+        }
+    }
+    
+}

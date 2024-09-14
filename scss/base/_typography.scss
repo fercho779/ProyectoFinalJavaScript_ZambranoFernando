@@ -1,0 +1,35 @@
+h1{
+    font-family: $font-family-primary;
+    font-weight: 700;
+    font-size: $font-size-title;
+}
+h2{
+    font-family: $font-family-primary;
+    font-weight: 700;
+    font-size:$font-size-subtitle;
+    color: rgb(237, 227, 227);
+}
+h3{
+    font-family: $font-family-primary;
+    font-weight: 700;
+    font-size:$font-size-sub-subtitle;
+}
+p,a,li 
+{
+    font-family: $font-family-primary;
+    font-weight: 400;
+    font-size: $font-size-text;
+    color: rgb(237, 227, 227);
+}
+form h2,input,textarea,label
+{
+    font-family: $font-family-primary;
+    font-weight: 400;
+    font-size: $font-size-text;
+}
+.mensaje{
+    font-family: $font-family-primary;
+    font-weight: 400;
+    font-size: $font-size-text;
+    color: rgb(0, 0, 0);
+}

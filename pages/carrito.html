@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Sket</title>
 </head>
 <body>
@@ -16,19 +16,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav w-100 d-flex ">
                     <li class="nav-item active">
-                        <a class="nav-link" href="./index.html">Tienda</a>
+                        <a class="nav-link" href="../index.html">Tienda</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="./pages/carrito.html"><img src="/assest/img/carrito.webp" alt="carro-de-la-compra" width=" 30" height="30"></a>
+                        <a class="nav-link" href="../pages/carrito.html"><img src="../assest/img/carrito.webp" alt="carro-de-la-compra" width=" 30" height="30"></a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
     <section id="seccionRemeras" class="container-card">
+        <h2>Su Carrito esta vacio</h2>
     </section>
-    <script src="/js/productos.js"></script>
-    <script src="/js/index.js"></script>
-    <script src="/js/bootstrap.bundle.min.js"></script>
+    <div id="precio"></div>
+    <div id = "mensajefinal"></div>
+    <button id="Finalizar"> Finalizar compra</button>
+    <script src="../js/carrito.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
