@@ -1,0 +1,9 @@
+.custom-navbar{
+    background-color: $color-crema;
+    .nav-link{
+        color: $color-negro;
+        :hover{
+            color: $color-hover;
+        }
+    }
+}
