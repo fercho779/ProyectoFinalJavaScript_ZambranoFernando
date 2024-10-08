@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Sket</title>
 </head>
 <body>
@@ -22,15 +23,27 @@
                     <a class="nav-link" href="./index.html">Tienda</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="./pages/carrito.html"><img src="/assest/img/carrito.webp" alt="carro-de-la-compra" width=" 30" height="30"></a>
+                    <a class="nav-link" href="./pages/carrito.html">
+                        <img src="/assest/img/carrito.webp" alt="carro-de-la-compra" width=" 30" height="30">
+                        <span id="contadorCarrito">0</span>
+                    </a>
                 </li>
             </ul>
         </div>
     </nav>
+    <div class="filtrar-precios">
+        <label for="filtrarPor">Filtrar por: </label>
+        <select id="filtrarPor" onchange="filtrarPorPrecio()">
+            <option value="default">Seleccionar</option>
+            <option value="asc">Precio más bajo</option>
+            <option value="desc">Precio más alto</option>
+        </select>
+    </div>
     <section id="seccionRemeras" class="container-card">
     </section>
-    <script src="/js/productos.js"></script>
+    
     <script src="/js/index.js"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
+    
 </body>
 </html>

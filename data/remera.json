@@ -1,0 +1,10 @@
+[
+    { "id": 0, "nombre": "Musculosa allboys", "imagen": "../assest/img/remera_allBoys_logo_rojo.webp", "precio": 15000 },
+    { "id": 1, "nombre": "Musculosa allboys", "imagen": "../assest/img/remera_allBoys_logo_azul.webp", "precio": 15000 },
+    { "id": 2, "nombre": "Remera allboys negra", "imagen": "../assest/img/remera_allBoys_negra.webp", "precio": 18000 },
+    { "id": 3, "nombre": "Remera commamders", "imagen": "../assest/img/remera_comamders.webp", "precio": 20000 },
+    { "id": 4, "nombre": "Remera you play", "imagen": "../assest/img/remera_you_play.webp", "precio": 17000 },
+    { "id": 5, "nombre": "Remera rawayana", "imagen": "../assest/img/remera_rawayana.webp", "precio": 25000 },
+    { "id": 6, "nombre": "Remera the archer", "imagen": "../assest/img/remera_taylor_the_archer.webp", "precio": 27000 },
+    { "id": 7, "nombre": "Remera vikings", "imagen": "../assest/img/remera_vikings.webp", "precio": 17000 }
+]
