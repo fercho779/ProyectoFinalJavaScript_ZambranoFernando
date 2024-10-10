@@ -16,7 +16,7 @@ function actualizarContadorCarrito() {
 async function pedirRemeras(){
     try
     {
-        const resp = await fetch('../data/remera.json');
+        const resp = await fetch('./data/remera.json');
         const data = await resp.json();
         remeras = data;
         mostrarRemeras(remeras);
